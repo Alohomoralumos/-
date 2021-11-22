@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lv2</title>
+</head>
+
+<body>
+    <div align="center">
+        <b>请选择您的爱好</b>
+        <br />
+    </div>
+    <div id="divlist" align="center">
+        <input type="checkbox" value="内卷" class="a">内卷
+        <input type="checkbox" value="疯狂内卷" class="a">疯狂内卷
+        <input type="checkbox" value="拼命内卷" class="a">拼命内卷
+        <input type="checkbox" value="使劲内卷" class="a">使劲内卷
+        <br />
+        <input type="button" value="全选" onclick="chose()">
+        <input type="button" value="全不选" onclick="unchose()">
+        <input type="button" value="反选" onclick="untichose()">
+    </div>
+    <script>
+    let typ = document.getElementsByClassName('a');
+    function chose(){
+        for(let i=0;i<typ.length;i++)
+        {
+            typ[i].checked=true;
+        }
+    }
+    function unchose(){
+        for(let i=0;i<typ.length;i++){
+            typ[i].checked=false;
+        }
+    }
+    function untichose(){
+        for(let i=0;i<typ.length;i++)
+        {
+            if(typ[i].checked==true)
+            typ[i].checked=false;
+            else typ[i].checked=true;
+        }
+    }
+    </script>
+
+</body>
+
+</html>
+</body>
+</html>
